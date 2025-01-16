@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "856791515665",
+    "project_id": "deneme-f8cb8",
+    "storage_bucket": "deneme-f8cb8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856791515665:android:401c5f6d5bd1d4ecf3a7b0",
+        "android_client_info": {
+          "package_name": "com.example.weather_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5ckFw7a0XS1-66h0deV7kVUAyZmwXdBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
