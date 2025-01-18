@@ -156,7 +156,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ],
                     ),
-                    Icon(Icons.wb_sunny, size: 40), // Optional weather icon
+                    Icon(Icons.wb_sunny, size: 40), 
                   ],
                 ),
               ),
