@@ -7,7 +7,6 @@ ARG flutter_ver=3.27.2
 ARG build_rev=0
 
 
-# Install Flutter
 ENV FLUTTER_HOME=/usr/local/flutter \
     FLUTTER_VERSION=${flutter_ver} \
     PATH=$PATH:/usr/local/flutter/bin:/usr/local/flutter/bin/cache/dart-sdk/bin
@@ -17,7 +16,6 @@ RUN apt-get update \
             ca-certificates \
  && update-ca-certificates \
     \
- # Install dependencies for Linux toolchain
  && apt-get install -y --no-install-recommends --no-install-suggests \
             build-essential \
             clang cmake \
@@ -26,7 +24,6 @@ RUN apt-get update \
             ninja-build \
             pkg-config \
     \
- # Install Flutter itself
  && curl -fL -o /tmp/flutter.tar.xz \
          https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${flutter_ver}-stable.tar.xz \
  && tar -xf /tmp/flutter.tar.xz -C /usr/local/ \
