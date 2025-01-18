@@ -20,7 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
         );
 
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Giriş başarılı!')));
-        Navigator.pushReplacementNamed(context, '/home'); // Ana sayfaya yönlendirme
+        Navigator.pushReplacementNamed(context, '/home'); 
       } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Giriş hatası: $e')));
       }
@@ -70,7 +70,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   );
 
                   ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Kayıt başarılı!')));
-                  Navigator.pushReplacementNamed(context, '/home'); // Ana sayfaya yönlendirme
+                  Navigator.pushReplacementNamed(context, '/home'); 
                 } catch (e) {
                   ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Kayıt hatası: $e')));
                 }
@@ -79,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             TextButton(
               onPressed: () {
-                Navigator.of(context).pop(); // Dialog'u kapat
+                Navigator.of(context).pop(); 
               },
               child: Text("İptal"),
             ),
